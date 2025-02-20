@@ -1,143 +1,147 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f8f9fa;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
 }
 
 header {
-    background: #007bff;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 #section-home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.w3schools.com/howto/photographer.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.w3schools.com/howto/photographer.jpg");
   height: 40vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-
 }
 
-div h2 {
-    text-align: center;
+ h2 {
+  text-align: center;
 }
 
 .nav-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .nav-list li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
 }
-
+.nav-list li a:hover{
+  color: aquamarine;
+  background-color: blue;
+}
 .gallery-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
 }
 
 .gallery-item {
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-
 .product-container {
-
+  display: flex;
+  gap: 10px;
 }
 
 .product {
-  display: flex;
-  align-items: center;
   gap: 15px;
   background: #f4f4f4;
-  padding: 15px;
+  padding: 10px;
   border-radius: 8px;
   flex: 1 1 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .product img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
-    aspect-ratio: 1 / 1
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 8px;
+  aspect-ratio: 1 / 1;
 }
-
 
 .product-info {
-    flex: 1;
-    overflow: hidden;
+  flex: 1;
+  overflow: hidden;
 }
 .product-info h3 {
-    font-size: 1.2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .product-info p {
-    font-size: 1rem;
-    line-height: 1.4;
-    color: #555;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 @media (max-width: 768px) {
-  .product-list {
-      /* grid-template-columns: 1fr; */
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .product {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
   .product img {
-      width: 100px;
-      height: 100px;
+    width: 100%;
+    height: 70%;
   }
   .product-info h3 {
-      font-size: 1rem;
+    font-size: 2rem;
   }
   .product-info p {
-      font-size: 0.9rem;
-      -webkit-line-clamp: 1;
+    font-size: 1rem;
+    -webkit-line-clamp: 3;
   }
 }
 
-.footer {
-    text-align: center;
-    padding: 20px;
-    background: #343a40;
-    color: white;
-    margin-top: 40px;
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #343a40;
+  color: white;
+  margin-top: 40px;
 }
